@@ -1,0 +1,60 @@
+@import "../../scss/variables.scss";
+
+.footer {
+  height: $default-footer-height;
+  background: $default-violet;
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    width: 969px;
+    height: 100%;
+    margin: 0 auto;
+
+    .footer-logo {
+      height: 51px;
+      margin-left: 2px;
+    }
+
+    .footer-questions {
+      width: 233px;
+      font-size: 16px;
+      line-height: 22px;
+      color: $default-white;
+      font-family: "YS Text Slim";
+      margin: 0px 0px 5px 50px;
+      min-height: 43px;
+      max-height: 43px;
+
+      .footer-link__wrapper {
+        border-bottom: 1px $default-white solid;
+        width: fit-content;
+        height: 20px;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        color: $default-white;
+      }
+    }
+
+    .footer-copyrights {
+      width: 440px;
+      font-size: 16px;
+      line-height: 22px;
+      color: $default-white;
+      font-family: "YS Text Slim";
+      margin: 0px 0px 3px 117px;
+    }
+    .footer-questions__tablet {
+      display: none;
+    }
+
+    .footer-copyrights__tablet {
+      display: none;
+    }
+  }
+}

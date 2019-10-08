@@ -1,0 +1,218 @@
+@import "../../scss/variables.scss";
+
+.page-content__includes {
+  background: $default-violet;
+  height: $default-include-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .includes-wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: 74%;
+    width: 969px;
+
+    .includes-title {
+      font-size: 42px;
+      line-height: 44px;
+      color: $default-white;
+      font-family: "YS Text Normal";
+    }
+
+    .includes-delivery {
+      padding-top: 61px;
+      display: flex;
+      width: 969px;
+      flex-wrap: wrap;
+      img {
+        height: 72px;
+        width: 72px;
+      }
+    }
+
+    .includes-delivery__title {
+      margin-left: 29px;
+      color: $default-white;
+      font-size: 32px;
+      line-height: 36px;
+      font-family: "YS Text Normal";
+
+      .includes-delivery__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        opacity: 0.7;
+        font-family: "YS Text Light";
+        letter-spacing: 0.37px;
+        margin-top: 5px;
+      }
+    }
+
+    .includes-services__title {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "YS Text Light";
+      color: $default-white;
+      letter-spacing: 0.6px;
+      font-weight: 500;
+      margin-top: 61px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 40px;
+
+      .includes-services__title-plus {
+        display: inline-block;
+        padding-left: 4px;
+        font-family: "YS Text Normal";
+        font-size: 17px;
+      }
+
+      .includes-services__title__image {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        padding-left: 4px;
+      }
+    }
+    .includes-services__grid-wrapper {
+      display: block;
+    }
+    .grid-text {
+      font-size: 18px;
+      line-height: 24px;
+      color: $default-white;
+      font-family: "YS Text Light";
+      font-weight: 500;
+      &.taxi {
+        left: 63px;
+        position: absolute;
+        letter-spacing: 0.5px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Taxi.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 184px;
+        }
+      }
+
+      &.taxi__tablet {
+        display: none;
+      }
+
+      &.music__tablet {
+        display: none;
+      }
+
+      &.music {
+        position: absolute;
+        left: 397px;
+        letter-spacing: 0.4px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Music.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 268px;
+        }
+      }
+      &.kino {
+        position: absolute;
+        left: 728px;
+        letter-spacing: 0.4px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Kinopoisk.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 241px;
+        }
+      }
+      &.drive {
+        position: absolute;
+        top: 422px;
+        left: 63px;
+        letter-spacing: 0.4px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Drive.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 199px;
+        }
+      }
+      &.disc {
+        position: absolute;
+        top: 422px;
+        left: 395px;
+        letter-spacing: 0.5px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Disk.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 240px;
+        }
+      }
+      &.afisha {
+        top: 422px;
+        left: 729px;
+        position: absolute;
+        letter-spacing: 0.5px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("/dist/img/includes/Afisha.png") no-repeat 0 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          right: 240px;
+        }
+      }
+    }
+    .includes__about {
+      padding-top: 228px;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "YS Text Light";
+      letter-spacing: 0.4px;
+    }
+    .includes__about__tablet {
+      display: none;
+    }
+    .about-text {
+      display: inline-block;
+      color: $default-white;
+      opacity: 0.7;
+    }
+    .about-link__wrapper {
+      display: inline-block;
+      border-bottom: 1px #d3c4fd solid;
+      height: 21px;
+
+      &:hover {
+        border-bottom: none;
+      }
+
+      & > a {
+        color: $default-white;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/* Base variables for landing page */
+
+// Colors
+$default-black: #222222;
+$default-violet: #6d3df7;
+$default-dark-grey: #898f97;
+$default-light-grey: #898f97;
+$default-white: #ffffff;
+$default-green: #16c67a;
+$default-red: #f73d33;
+$default-violet-hover: #422598;
+$default-black-active: #222222;
+
+// Fonts
+$default-font-family: "YS Text", Helvetica, sans-serif;
+$default-font-weight: 400;
+
+@font-face {
+  font-family: "YS Text";
+  src: url("/src/fonts/YSText-Regular.woff2") format("woff2"),
+    url("/src/fonts/YSText-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YS Text Slim";
+  src: url("/src/fonts/YSTextRegular.woff2") format("woff2"),
+    url("/src/fonts/YSTextRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YS Text Normal";
+  src: url("/src/fonts/YSTextMedium.woff2") format("woff2"),
+    url("/src/fonts/YSTextMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YS Text Bold";
+  src: url("/src/fonts/YSTextBold.woff2") format("woff2"),
+    url("/src/fonts/YSTextBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YS Text Thin";
+  src: url("/src/fonts/YSTextThin.woff2") format("woff2"),
+    url("/src/fonts/YSTextThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YS Text Light";
+  src: url("/src/fonts/YSTextLight.woff2") format("woff2"),
+    url("/src/fonts/YSTextLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Size
+$default-head-height: 743px;
+$default-include-height: 756px;
+$default-economy-height: 930px;
+$default-footer-height: 171px;
